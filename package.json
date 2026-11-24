@@ -1,9 +1,9 @@
 {
-  "name": "carrossel-inema",
+  "name": "carrossel-ARCKHÉ",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Carrossel de Instagram/Facebook/TikTok no padrão INEMA: roteiro em JSON vira slides 1080x1350 e stories 1080x1920.",
+  "description": "Carrossel de Instagram/Facebook/TikTok no padrÃ£o ARCKHÉ: roteiro em JSON vira slides 1080x1350 e stories 1080x1920.",
   "scripts": {
     "render": "node scripts/render.mjs",
     "selftest": "bash setup.sh"

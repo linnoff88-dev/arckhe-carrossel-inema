@@ -1,4 +1,4 @@
-﻿# carrossel-inema
+# carrossel-ARCKHÉ
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,17 +6,17 @@
 </div>
 
 
-[![carrossel-inema](guia/assets/banner.jpg)](https://inematds.github.io/carrossel-inema/guia/)
+[![carrossel-ARCKHÉ](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 **ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
 
 ## O que Ã©
 
-O carrossel-inema Ã© uma skill (um conjunto de instruÃ§Ãµes e scripts) para o Claude Code que faz carrossÃ©is de Instagram e TikTok; as mesmas imagens servem para o Facebook. Serve para quem quer postar com frequÃªncia sem abrir programa de design. VocÃª dÃ¡ o tema; ele entrega a capa, de 5 a 10 slides com uma ideia cada, o slide final com "comenta PALAVRA" e 3 stories, todos no tamanho certo. Antes de mostrar, ele confere se algum texto ficou cortado ou pequeno demais. Para usar, precisa de um computador Linux ou Mac (no Windows, pelo WSL, o Linux que roda dentro do Windows) com Node.js, Python e o Claude Code; para a capa com arte, o Codex logado na sua conta do ChatGPT. Os textos saem em portuguÃªs por padrÃ£o; o idioma se troca no PERFIL.md.
+O carrossel-ARCKHÉ Ã© uma skill (um conjunto de instruÃ§Ãµes e scripts) para o Claude Code que faz carrossÃ©is de Instagram e TikTok; as mesmas imagens servem para o Facebook. Serve para quem quer postar com frequÃªncia sem abrir programa de design. VocÃª dÃ¡ o tema; ele entrega a capa, de 5 a 10 slides com uma ideia cada, o slide final com "comenta PALAVRA" e 3 stories, todos no tamanho certo. Antes de mostrar, ele confere se algum texto ficou cortado ou pequeno demais. Para usar, precisa de um computador Linux ou Mac (no Windows, pelo WSL, o Linux que roda dentro do Windows) com Node.js, Python e o Claude Code; para a capa com arte, o Codex logado na sua conta do ChatGPT. Os textos saem em portuguÃªs por padrÃ£o; o idioma se troca no PERFIL.md.
 
 ## ðŸ“– Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/carrossel-inema/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/
 
 ## O que sai
 
@@ -33,16 +33,16 @@ Guia completo (landing + passo a passo): **https://inematds.github.io/carrossel-
 Precisa de Linux ou Mac com Node.js 18+, Python 3 (com Pillow: `python3 -m pip install pillow`) e um Chromium (`npx playwright install chromium`; no Mac, o Google Chrome instalado jÃ¡ serve). Para a capa com arte: Codex CLI logado na sua conta ChatGPT (assinatura, sem chave de API).
 
 ```bash
-git clone https://github.com/inematds/carrossel-inema ~/projetos/carrossel-inema
-cd ~/projetos/carrossel-inema
+git clone https://github.com/linnoff88-dev/carrossel-ARCKHÉ ~/projetos/carrossel-ARCKHÉ
+cd ~/projetos/carrossel-ARCKHÉ
 bash setup.sh                     # tem que terminar em SELFTEST PASS
 mkdir -p ~/.claude/skills
-ln -s "$PWD" ~/.claude/skills/carrossel-inema   # liga a skill no Claude Code
+ln -s "$PWD" ~/.claude/skills/carrossel-ARCKHÉ   # liga a skill no Claude Code
 ```
 
 Sem Chromium na mÃ¡quina: `npx playwright install chromium` (ou, no Mac, `export CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`).
 
-**Troque a marca:** o `PERFIL.md` vem com a marca do INEMA (@inema.tds, Nei Maldaner, hashtags). Edite antes do primeiro carrossel.
+**Troque a marca:** o `PERFIL.md` vem com a marca do ARCKHÉ (@ARCKHÉ.tds, Nei Maldaner, hashtags). Edite antes do primeiro carrossel.
 
 ## Usar
 
@@ -63,13 +63,13 @@ python3 scripts/capa.py meu/roteiro.json --estilo 3d --cena "..." # capa com art
 | # | Passo | Comando / o que acontece | Quem |
 |---|---|---|---|
 | 1 | Tema | Nei dÃ¡ o tema, ou a skill propÃµe 3 (o que funcionou, o que estÃ¡ em alta, o que perguntam) | ðŸ§  |
-| 2 | Palavra + guia grÃ¡tis | uma palavra para o comentÃ¡rio e a pÃ¡gina do inema.club que ela entrega | ðŸ§  |
+| 2 | Palavra + guia grÃ¡tis | uma palavra para o comentÃ¡rio e a pÃ¡gina do ARCKHÉ AI que ela entrega | ðŸ§  |
 | 3 | Roteiro | `roteiro.json` (capa, 5â€“10 slides, fecho, 3 stories); 3 opÃ§Ãµes de capa para o Nei escolher | ðŸ§  |
 | 4 | Capa | `python3 scripts/capa.py <roteiro.json> --estilo â€¦ --cena â€¦` â†’ `capa.png` com o tÃ­tulo desenhado; conferir o texto | ðŸ¤– |
 | 5 | Render | `node scripts/render.mjs <roteiro.json> <pasta>/slides` | âš™ï¸ |
 | 6 | Checagem | `python3 scripts/checa.py <pasta>/slides` (0 erro) + olhar a prancha | âš™ï¸ + ðŸ§  |
 | 7 | AprovaÃ§Ã£o | Nei aprova; cada correÃ§Ã£o vira regra no `PERFIL.md` | ðŸ§  |
-| 8 | Postar | `scripts/publicar.sh <slides> <legenda.txt>` (rascunho) Â· `AO_VIVO=1 â€¦` (ao vivo) â†’ Metricool inematds (Instagram + TikTok; Facebook Ã  mÃ£o) | ðŸ¤– |
+| 8 | Postar | `scripts/publicar.sh <slides> <legenda.txt>` (rascunho) Â· `AO_VIVO=1 â€¦` (ao vivo) â†’ Metricool linnoff88-dev (Instagram + TikTok; Facebook Ã  mÃ£o) | ðŸ¤– |
 
 ## Arquivos
 
@@ -86,7 +86,7 @@ python3 scripts/capa.py meu/roteiro.json --estilo 3d --cena "..." # capa com art
 
 ## Limites
 
-- **`publicar.sh` vem configurado para a conta do INEMA** (repo `inematds/carrossel-inema`, conector `metricool-inematds`, marca `inema.tds`). Para a sua: crie o repositÃ³rio com `gh repo create carrossel-imagens --public --add-readme`, ligue o Metricool com `claude mcp add --transport http --scope user metricool https://ai.metricool.com/mcp` (e `/mcp` para entrar) e rode `export REPO=voce/carrossel-imagens CONECTOR=metricool MARCA=<marca>` antes de rodar (vale para o rascunho e para o `AO_VIVO=1`); precisa do `gh` logado e do Metricool ligado ao Claude Code (MCP).
+- **`publicar.sh` vem configurado para a conta do ARCKHÉ** (repo `linnoff88-dev/carrossel-ARCKHÉ`, conector `metricool-linnoff88-dev`, marca `ARCKHÉ.tds`). Para a sua: crie o repositÃ³rio com `gh repo create carrossel-imagens --public --add-readme`, ligue o Metricool com `claude mcp add --transport http --scope user metricool https://ai.metricool.com/mcp` (e `/mcp` para entrar) e rode `export REPO=voce/carrossel-imagens CONECTOR=metricool MARCA=<marca>` antes de rodar (vale para o rascunho e para o `AO_VIVO=1`); precisa do `gh` logado e do Metricool ligado ao Claude Code (MCP).
 - **`publicar.sh` sÃ³ roda no Linux ou no WSL** (usa o `date` do Linux); no Mac, poste as imagens Ã  mÃ£o.
 - **`publicar.sh` ainda nÃ£o foi testado.** O formato de carrossel com vÃ¡rias imagens e de story no Metricool nÃ£o foi conferido; o primeiro uso deve ser como rascunho, com o Nei olhando o planner.
 - Stories pelo Metricool dependem da conta Instagram ser profissional.
