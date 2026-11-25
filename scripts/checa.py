@@ -2,7 +2,7 @@
 """Confere um carrossel renderizado antes de mostrar ao Nei.
 
 Uso: python3 scripts/checa.py <pasta-dos-slides> [roteiro.json]
-Sai com código 1 se houver ERRO. AVISO não bloqueia.
+Sai com código 1 se houver ERRO. AVISO nêo bloqueia.
 """
 import json
 import re
@@ -22,7 +22,7 @@ def tamanho_png(p: Path):
 
 
 def amarelado(p: Path):
-    """(R+G)/2 - B médio: foto neutra fica de 0 a 10. Sem Pillow, não mede."""
+    """(R+G)/2 - B médio: foto neutra fica de 0 a 10. Sem Pillow, nêo mede."""
     try:
         from PIL import Image
     except ImportError:
@@ -48,9 +48,9 @@ def main():
         erros.append("falta a capa (01-capa.png)")
     n_slides = len(roteiro.get("slides", []))
     if not 5 <= n_slides <= 10:
-        erros.append(f"{n_slides} slides de conteúdo; o padrão é de 5 a 10")
+        erros.append(f"{n_slides} slides de conteúdo; o padrêo é de 5 a 10")
     if len(stories) != 3:
-        avisos.append(f"{len(stories)} stories (o padrão são 3)")
+        avisos.append(f"{len(stories)} stories (o padrêo sêo 3)")
 
     for p in feed:
         if tamanho_png(p) != (1080, 1350):
@@ -62,7 +62,7 @@ def main():
     for pg in rel["paginas"]:
         for c in pg["caixas"]:
             if c["estourou"]:
-                erros.append(f"{pg['nome']}: texto não coube em .{c['classe']} — encurte")
+                erros.append(f"{pg['nome']}: texto nêo coube em .{c['classe']} — encurte")
             elif c["escala"] < 0.85:
                 avisos.append(f"{pg['nome']}: letra de .{c['classe']} reduzida para {c['px']}px — texto longo")
             if c["px"] < 24:
@@ -80,15 +80,15 @@ def main():
         if not re.search(r"\d", texto_capa):
             avisos.append("capa sem número (número no título segura o dedo)")
         if roteiro.get("assunto") and roteiro["assunto"].lower() not in texto_capa.lower():
-            avisos.append(f"capa não cita o assunto '{roteiro['assunto']}' pelo nome")
+            avisos.append(f"capa nêo cita o assunto '{roteiro['assunto']}' pelo nome")
     else:
         arte = roteiro_p.parent / capa["imagem"]
         if not arte.exists():
-            erros.append(f"capa aponta para {capa['imagem']}, que não existe")
+            erros.append(f"capa aponta para {capa['imagem']}, que nêo existe")
         else:
             am = amarelado(arte)
             if am is None:
-                avisos.append("Pillow ausente: não medi se a capa saiu amarelada (python3 -m pip install pillow)")
+                avisos.append("Pillow ausente: nêo medi se a capa saiu amarelada (python3 -m pip install pillow)")
             elif am is not None and am > 25 and not capa.get("cor_livre"):
                 erros.append(f"capa amarelada ({am:.0f}; limite 25): gerar de novo com luz neutra ou marcar capa.cor_livre=true")
             elif am is not None and am > 18:
@@ -110,7 +110,7 @@ def main():
         if len(s.get("texto", "")) > 260:
             avisos.append(f"slide {k}: texto com {len(s['texto'])} caracteres (ideal até 260)")
         if any(ch.isdigit() for ch in s.get("texto", "") + json.dumps(s.get("dados", []))) and not s.get("fonte"):
-            avisos.append(f"slide {k}: tem número mas não tem 'fonte' — confirmar o dado")
+            avisos.append(f"slide {k}: tem número mas nêo tem 'fonte' — confirmar o dado")
 
     for a in avisos:
         print("AVISO", a)

@@ -1,27 +1,27 @@
 {
-  "marca": "ARCKHÉ AI",
-  "conta": "@ARCKHÉ.tds",
+  "marca": "ARCKH� AI",
+  "conta": "@ARCKH�.tds",
   "assunto": "agente",
   "palavra": "AGENTE",
   "capa": {
-    "titulo": ["6 tarefas chatas", "que um agente", "de IA jÃ¡ faz", "por vocÃª"],
+    "titulo": ["6 tarefas chatas", "que um agente", "de IA já faz", "por você"],
     "destaque": "agente"
   },
   "slides": [
-    { "numero": 1, "titulo": "RelatÃ³rio da semana", "texto": "Ele abre suas planilhas, compara com a semana anterior e escreve **o que subiu e o que caiu** em poucas linhas." },
-    { "numero": 2, "titulo": "Responder quem pediu orÃ§amento", "texto": "LÃª a mensagem nova, entende o pedido e deixa **um rascunho de resposta** com seu link de agenda. VocÃª sÃ³ confere e envia." },
-    { "numero": 3, "titulo": "Organizar notas fiscais", "texto": "Abre cada nota, copia valor, data e fornecedor para a planilha. **SÃ³ rascunho**: pagar continua sendo com vocÃª." },
-    { "numero": 4, "titulo": "Agendar em sistema antigo", "texto": "Se tem tela, o agente usa. Aquele portal velho do fornecedor **nÃ£o precisa de integraÃ§Ã£o** para entrar na rotina." },
-    { "numero": 5, "titulo": "Boas-vindas ao cliente novo", "texto": "Manda a mensagem de boas-vindas, cria a pasta do cliente e **monta a lista do que falta** para comeÃ§ar." },
-    { "numero": 6, "titulo": "Achar a prÃ³xima tarefa chata", "texto": "PeÃ§a ao agente para listar o que vocÃª repete toda semana. **A primeira da lista** Ã© a prÃ³xima que sai do seu prato." }
+    { "numero": 1, "titulo": "Relatório da semana", "texto": "Ele abre suas planilhas, compara com a semana anterior e escreve **o que subiu e o que caiu** em poucas linhas." },
+    { "numero": 2, "titulo": "Responder quem pediu orçamento", "texto": "Lê a mensagem nova, entende o pedido e deixa **um rascunho de resposta** com seu link de agenda. Você só confere e envia." },
+    { "numero": 3, "titulo": "Organizar notas fiscais", "texto": "Abre cada nota, copia valor, data e fornecedor para a planilha. **Só rascunho**: pagar continua sendo com você." },
+    { "numero": 4, "titulo": "Agendar em sistema antigo", "texto": "Se tem tela, o agente usa. Aquele portal velho do fornecedor **nêo precisa de integraçêo** para entrar na rotina." },
+    { "numero": 5, "titulo": "Boas-vindas ao cliente novo", "texto": "Manda a mensagem de boas-vindas, cria a pasta do cliente e **monta a lista do que falta** para começar." },
+    { "numero": 6, "titulo": "Achar a próxima tarefa chata", "texto": "Peça ao agente para listar o que você repete toda semana. **A primeira da lista** é a próxima que sai do seu prato." }
   ],
   "fecho": {
     "titulo": "Quer as fichas prontas desses agentes?",
-    "texto": "Comenta a palavra abaixo que eu te mando o guia grÃ¡tis, passo a passo."
+    "texto": "Comenta a palavra abaixo que eu te mando o guia grátis, passo a passo."
   },
   "stories": [
-    { "titulo": "Saiu carrossel novo", "texto": "6 tarefas chatas que um agente de IA **jÃ¡ faz por vocÃª**." },
-    { "titulo": "Qual Ã© a sua?", "texto": "Responda aqui qual tarefa vocÃª **mais repete** toda semana." },
-    { "titulo": "Guia grÃ¡tis", "texto": "Comenta no post a palavra abaixo e receba as fichas prontas." }
+    { "titulo": "Saiu carrossel novo", "texto": "6 tarefas chatas que um agente de IA **já faz por você**." },
+    { "titulo": "Qual é a sua?", "texto": "Responda aqui qual tarefa você **mais repete** toda semana." },
+    { "titulo": "Guia grátis", "texto": "Comenta no post a palavra abaixo e receba as fichas prontas." }
   ]
 }

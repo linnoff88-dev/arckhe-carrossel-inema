@@ -5,13 +5,13 @@ cd "$(dirname "$0")"
 
 falha() { echo "SELFTEST FAIL: $*"; exit 1; }
 
-command -v node >/dev/null || falha "Node.js não encontrado (precisa da versão 18 ou mais nova)"
-[ "$(node -p "process.versions.node.split('.')[0]")" -ge 18 ] || falha "Node.js $(node -v) é antigo: precisa da versão 18 ou mais nova"
-command -v python3 >/dev/null || falha "python3 não encontrado"
+command -v node >/dev/null || falha "Node.js nêo encontrado (precisa da versêo 18 ou mais nova)"
+[ "$(node -p "process.versions.node.split('.')[0]")" -ge 18 ] || falha "Node.js $(node -v) é antigo: precisa da versêo 18 ou mais nova"
+command -v python3 >/dev/null || falha "python3 nêo encontrado"
 command -v ffmpeg >/dev/null || echo "aviso: ffmpeg ausente (só faz falta para ajustar a capa gerada)"
-python3 -c "import PIL" 2>/dev/null || echo "aviso: Pillow ausente — sem ele a checagem não mede se a capa saiu amarelada (python3 -m pip install pillow)"
+python3 -c "import PIL" 2>/dev/null || echo "aviso: Pillow ausente — sem ele a checagem nêo mede se a capa saiu amarelada (python3 -m pip install pillow)"
 
-# playwright-core não baixa navegador; usa o Chromium que já existe na máquina
+# playwright-core nêo baixa navegador; usa o Chromium que já existe na máquina
 PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm install --silent --no-audit --no-fund >/dev/null
 
 for f in Sora.ttf Inter-400.ttf Inter-500.ttf Inter-700.ttf; do

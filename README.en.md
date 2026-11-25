@@ -2,7 +2,7 @@
 
 [![carrossel-ARCKHÉ](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/
 
-**ðŸ‡§ðŸ‡· [PortuguÃªs](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [EspaÃ±ol](README.es.md)**
+**ðŸ‡§ðŸ‡· [Português](README.md) Â· ðŸ‡ºðŸ‡¸ [English](README.en.md) Â· ðŸ‡ªðŸ‡¸ [Espaê±ol](README.es.md)**
 
 ## What it is
 
@@ -16,10 +16,10 @@ Full guide (landing page + step-by-step instructions): **https://linnoff88-dev.g
 
 | Item | Size | Purpose |
 |---|---|---|
-| Cover | 1080Ã—1350 | stop the scroll: number + topic named explicitly + title in up to 4 lines |
-| 5 to 10 slides | 1080Ã—1350 | one idea per slide, large number, key passage in bold, sourced fact |
-| Closing slide | 1080Ã—1350 | â€œComment WORDâ€ with the word highlighted |
-| 3 stories | 1080Ã—1920 | lead to the post, invite a reply, repeat the word |
+| Cover | 1080ê—1350 | stop the scroll: number + topic named explicitly + title in up to 4 lines |
+| 5 to 10 slides | 1080ê—1350 | one idea per slide, large number, key passage in bold, sourced fact |
+| Closing slide | 1080ê—1350 | â€œComment WORDâ€ with the word highlighted |
+| 3 stories | 1080ê—1920 | lead to the post, invite a reply, repeat the word |
 | `relatorio.json` | â€” | what was shrunk, what didnâ€™t fit, broken image |
 
 ## Install (once)

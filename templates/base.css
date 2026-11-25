@@ -1,4 +1,4 @@
-/* Carrossel ARCKHÉ â€” tema escuro, Sora nos tÃ­tulos, Inter no corpo, amarelo #FACC15 */
+/* Carrossel ARCKH� �?" tema escuro, Sora nos títulos, Inter no corpo, amarelo #FACC15 */
 @font-face { font-family: Sora; font-weight: 100 800; src: url("{{FONTS}}/Sora.ttf"); }
 @font-face { font-family: Inter; font-weight: 400; src: url("{{FONTS}}/Inter-400.ttf"); }
 @font-face { font-family: Inter; font-weight: 500; src: url("{{FONTS}}/Inter-500.ttf"); }
@@ -29,7 +29,7 @@ html, body { background: var(--bg); }
   font: 700 26px/1 Sora, sans-serif; letter-spacing: .14em; color: var(--mute); text-transform: uppercase; }
 .top .marca { color: var(--brand); }
 
-/* slide de conteÃºdo */
+/* slide de conteúdo */
 .corpo { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 1; }
 .marcadagua { position: absolute; right: -40px; bottom: 40px; font: 800 760px/0.8 Sora, sans-serif;
   color: transparent; -webkit-text-stroke: 3px rgba(250, 204, 21, .10); z-index: 0; }
