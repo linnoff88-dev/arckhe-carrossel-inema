@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Instala o carrossel-inema e roda o autoteste. Tem que terminar em "SELFTEST PASS".
+# Instala o carrossel-ARCKHÉ e roda o autoteste. Tem que terminar em "SELFTEST PASS".
 set -euo pipefail
 cd "$(dirname "$0")"
 

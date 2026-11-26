@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Carrossel INEMA — roteiro.json → PNGs (feed 1080x1350 + stories 1080x1920) + relatorio.json
+// Carrossel ARCKHÉ — roteiro.json → PNGs (feed 1080x1350 + stories 1080x1920) + relatorio.json
 // Uso: node scripts/render.mjs <roteiro.json> [pasta-de-saida]
 import { chromium } from "playwright-core";
 import fs from "node:fs";
@@ -39,7 +39,7 @@ const SETA = `<svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentC
 const css = fs.readFileSync(path.join(RAIZ, "templates/base.css"), "utf8")
   .replace(/url\("\{\{FONTS\}\}\/([\w-]+)\.(woff2|ttf)"\)/g, (_, f, ext) =>
     `url(data:font/${ext};base64,${fs.readFileSync(path.join(RAIZ, "assets/fonts", `${f}.${ext}`)).toString("base64")})`);
-const marca = esc(roteiro.marca || "INEMA.CLUB");
+const marca = esc(roteiro.marca || "ARCKHÉ AI");
 const conta = esc(roteiro.conta || "");
 const total = (roteiro.slides?.length || 0) + 2;
 
